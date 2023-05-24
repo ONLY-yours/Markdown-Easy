@@ -1,0 +1,13 @@
+.markdownBox {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #d9d9d9;
+  min-height: 40vh;
+}
+
+.markdownBox:hover {
+  border-color: #1890ff;
+}

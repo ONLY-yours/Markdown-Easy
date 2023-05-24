@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.writeBlock {
+  flex: 1;
+  height: 80vh;
+  width: 100%;
+}
+
+
+.markdownBlock {
+  flex: 1;
+  height: 80vh;
+  width: 100%;
+}
+
+.wordInputArea{
+  height: 100% !important;
+  min-height: 40vh !important;
+  font-size: 16px;
+}
+
+@media (max-width: 1300px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .writeBlock {
+    height: 40vh;
+  }
+
+  .markdownBlock {
+    height: 40vh;
+  }
+}
