@@ -1,11 +1,10 @@
 .main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  gap: 20px;
+}
+
+.actionList{
+  margin-bottom: 20px;
 }
 
 .writeBlock {
@@ -14,6 +13,21 @@
   width: 100%;
 }
 
+.workspaceBody{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.writeBlock:hover {
+  box-shadow: 0px 0px 10px 10px rgba(24, 144, 255, 0.1);
+}
+
+.markdownBlock:hover {
+  box-shadow: 10px 10px 0px 0px rgba(24, 144, 255, 0.1);
+}
 
 .markdownBlock {
   flex: 1;
@@ -21,7 +35,7 @@
   width: 100%;
 }
 
-.wordInputArea{
+.wordInputArea {
   height: 100% !important;
   min-height: 40vh !important;
   font-size: 16px;
