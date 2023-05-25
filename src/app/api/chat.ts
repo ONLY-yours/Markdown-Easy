@@ -7,9 +7,6 @@ const SystemChatPrompt = `你是一个 markdown 助手,希望你能将下面的�
 3. 如果出现了 注意、提醒 等字样,可以结合当前语句，返回块引用的方式将其包裹
 `;
 
-console.log("process.env",process.env);
-
-
 // if (!process.env.OPENAI_API_KEY) {
   // throw new Error("Missing env var from OpenAI");
 // }

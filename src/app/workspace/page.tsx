@@ -4,7 +4,7 @@ import { Button, Input } from "antd";
 import styles from "./page.module.css";
 import { useSpring, animated, config } from "@react-spring/web";
 import MarkDown from "@/components/markdown";
-import optimizeContent from "../api/chatOptimize";
+import { PostMessage } from "./apiUtils";
 
 const WorkSpace = () => {
   const [{ background }] = useSpring(
@@ -34,7 +34,7 @@ const WorkSpace = () => {
       <div className={styles.actionList}>
         <Button
           onClick={async () => {
-            setTransContent((await optimizeContent(word)).text);
+            PostMessage({ content: word });
           }}
         >
           Total Upgrade
